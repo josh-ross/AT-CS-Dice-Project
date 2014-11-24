@@ -1,0 +1,39 @@
+/**
+ * Write a description of class Die here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Die
+{
+  private int face_value;
+  
+  public Die()
+  {
+      face_value = 1;
+  }
+  
+  /**
+   * Returns the face value of the die
+   */
+  public int getValue()
+  {
+     return face_value; 
+  }
+  
+  /**
+   * Rolls the die (chooses a pseudo-random integer between 1 and 6 inclusive)
+   */
+  public void roll()
+  {
+      face_value = (int)((Math.random()*6)+1);
+  }    
+  /**
+   * Returns the String equivalent of the face value (i.e. "3")
+   */
+  public String toString()
+  {
+      String string_value = "" + face_value;
+      return string_value;
+  }
+}
